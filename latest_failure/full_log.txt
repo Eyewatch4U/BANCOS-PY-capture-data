@@ -1,12 +1,26 @@
 → Navegando a Meltwater...
   page.url = https://app.meltwater.com/report/public/JyMxZMcUmDPYUVb4CPjAVe2K/snapshot
-  page.title = Generating
-→ Password gate detectado, enviando passcode...
-  Post-reload: Public Report
-✓ URL .gz detectada
+  page.title = Report not found
+→ Sin password gate (¿ya autenticado o reporte abierto?)
 → Esperando .gz (hasta 300s, sin recargas agresivas)...
-  señal=7557161  size=16746148B
-✓ Snapshot CON datos (señal=7557161).
-→ POST directo al worker /ingest ...
-✗ Worker HTTP 500: {"ok":false,"error":"KV put() limit exceeded for the day."}
-El worker devolvió status inesperado: 500
+→ Stall > 120s. Reload suave único. (quedan 179s)
+→ Stall > 120s. Reload suave único. (quedan 57s)
+
+✗ ERROR: No se obtuvo un .gz con datos en 300s tras 41 responses.
+Últimos estados del endpoint snapshot:
+404 https://app.meltwater.com/report/public/JyMxZMcUmDPYUVb4CPjAVe2K/snapshot
+403 https://app.meltwater.com/report/public/JyMxZMcUmDPYUVb4CPjAVe2K/snapshot
+403 https://app.meltwater.com/report/public/JyMxZMcUmDPYUVb4CPjAVe2K/snapshot
+502 persistente = Meltwater bloquea la IP de salida (datacenter). Correr en self-hosted runner (IP residencial) o con PROXY_URL residencial.
+Traceback (most recent call last):
+  File "/home/runner/work/BANCOS-PY-capture-data/BANCOS-PY-capture-data/capture_meltwater.py", line 302, in main
+    gz_url, data = await capture_gz_url()
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/BANCOS-PY-capture-data/BANCOS-PY-capture-data/capture_meltwater.py", line 256, in capture_gz_url
+    raise RuntimeError(
+RuntimeError: No se obtuvo un .gz con datos en 300s tras 41 responses.
+Últimos estados del endpoint snapshot:
+404 https://app.meltwater.com/report/public/JyMxZMcUmDPYUVb4CPjAVe2K/snapshot
+403 https://app.meltwater.com/report/public/JyMxZMcUmDPYUVb4CPjAVe2K/snapshot
+403 https://app.meltwater.com/report/public/JyMxZMcUmDPYUVb4CPjAVe2K/snapshot
+502 persistente = Meltwater bloquea la IP de salida (datacenter). Correr en self-hosted runner (IP residencial) o con PROXY_URL residencial.
