@@ -1,8 +1,15 @@
-No se obtuvo un .gz con datos en 300s tras 41 responses.
+No se obtuvo un .gz con datos en 300s tras 155 responses.
 Últimos estados del endpoint snapshot:
 404 https://app.meltwater.com/report/public/JyMxZMcUmDPYUVb4CPjAVe2K/snapshot
-403 https://app.meltwater.com/report/public/JyMxZMcUmDPYUVb4CPjAVe2K/snapshot
-403 https://app.meltwater.com/report/public/JyMxZMcUmDPYUVb4CPjAVe2K/snapshot
+404 https://app.meltwater.com/report/public/JyMxZMcUmDPYUVb4CPjAVe2K/snapshot
+404 https://app.meltwater.com/report/public/JyMxZMcUmDPYUVb4CPjAVe2K/snapshot
+404 https://app.meltwater.com/report/public/JyMxZMcUmDPYUVb4CPjAVe2K/snapshot
+404 https://app.meltwater.com/report/public/JyMxZMcUmDPYUVb4CPjAVe2K/snapshot
+404 https://app.meltwater.com/report/public/JyMxZMcUmDPYUVb4CPjAVe2K/snapshot
+200 https://app.meltwater.com/report/public/JyMxZMcUmDPYUVb4CPjAVe2K/snapshot
+200 https://app.meltwater.com/report/public/JyMxZMcUmDPYUVb4CPjAVe2K/snapshot
+308 https://app.meltwater.com/a/shareable-reports/?report_id=JyMxZMcUmDPYUVb4CPjAVe2K&interaction=true&tab=0&snapshot_token=
+200 https://app.meltwater.com/a/shareable-reports?report_id=JyMxZMcUmDPYUVb4CPjAVe2K&interaction=true&tab=0&snapshot_token=F
 502 persistente = Meltwater bloquea la IP de salida (datacenter). Correr en self-hosted runner (IP residencial) o con PROXY_URL residencial.
 
 Traceback (most recent call last):
@@ -11,9 +18,16 @@ Traceback (most recent call last):
                    ^^^^^^^^^^^^^^^^^^^^^^
   File "/home/runner/work/BANCOS-PY-capture-data/BANCOS-PY-capture-data/capture_meltwater.py", line 256, in capture_gz_url
     raise RuntimeError(
-RuntimeError: No se obtuvo un .gz con datos en 300s tras 41 responses.
+RuntimeError: No se obtuvo un .gz con datos en 300s tras 155 responses.
 Últimos estados del endpoint snapshot:
 404 https://app.meltwater.com/report/public/JyMxZMcUmDPYUVb4CPjAVe2K/snapshot
-403 https://app.meltwater.com/report/public/JyMxZMcUmDPYUVb4CPjAVe2K/snapshot
-403 https://app.meltwater.com/report/public/JyMxZMcUmDPYUVb4CPjAVe2K/snapshot
+404 https://app.meltwater.com/report/public/JyMxZMcUmDPYUVb4CPjAVe2K/snapshot
+404 https://app.meltwater.com/report/public/JyMxZMcUmDPYUVb4CPjAVe2K/snapshot
+404 https://app.meltwater.com/report/public/JyMxZMcUmDPYUVb4CPjAVe2K/snapshot
+404 https://app.meltwater.com/report/public/JyMxZMcUmDPYUVb4CPjAVe2K/snapshot
+404 https://app.meltwater.com/report/public/JyMxZMcUmDPYUVb4CPjAVe2K/snapshot
+200 https://app.meltwater.com/report/public/JyMxZMcUmDPYUVb4CPjAVe2K/snapshot
+200 https://app.meltwater.com/report/public/JyMxZMcUmDPYUVb4CPjAVe2K/snapshot
+308 https://app.meltwater.com/a/shareable-reports/?report_id=JyMxZMcUmDPYUVb4CPjAVe2K&interaction=true&tab=0&snapshot_token=
+200 https://app.meltwater.com/a/shareable-reports?report_id=JyMxZMcUmDPYUVb4CPjAVe2K&interaction=true&tab=0&snapshot_token=F
 502 persistente = Meltwater bloquea la IP de salida (datacenter). Correr en self-hosted runner (IP residencial) o con PROXY_URL residencial.
